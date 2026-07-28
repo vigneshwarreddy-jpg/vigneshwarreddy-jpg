@@ -1,0 +1,183 @@
+<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+        
+        .container {
+          width: 800px;
+          height: 400px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(135deg, #0a0a0a 0%, #0d1117 30%, #0a1628 60%, #0d1117 100%);
+          position: relative;
+          overflow: hidden;
+          font-family: 'JetBrains Mono', monospace;
+        }
+        
+        /* Matrix rain effect */
+        .matrix-col {
+          position: absolute;
+          top: -100%;
+          font-size: 14px;
+          color: #00ff4120;
+          animation: matrix-fall linear infinite;
+          font-family: 'JetBrains Mono', monospace;
+        }
+        .matrix-col:nth-child(1) { left: 5%; animation-duration: 8s; animation-delay: 0s; }
+        .matrix-col:nth-child(2) { left: 15%; animation-duration: 10s; animation-delay: 1s; }
+        .matrix-col:nth-child(3) { left: 25%; animation-duration: 7s; animation-delay: 0.5s; }
+        .matrix-col:nth-child(4) { left: 35%; animation-duration: 9s; animation-delay: 2s; }
+        .matrix-col:nth-child(5) { left: 45%; animation-duration: 11s; animation-delay: 0.3s; }
+        .matrix-col:nth-child(6) { left: 55%; animation-duration: 8s; animation-delay: 1.5s; }
+        .matrix-col:nth-child(7) { left: 65%; animation-duration: 10s; animation-delay: 0.8s; }
+        .matrix-col:nth-child(8) { left: 75%; animation-duration: 7s; animation-delay: 2.5s; }
+        .matrix-col:nth-child(9) { left: 85%; animation-duration: 9s; animation-delay: 0.1s; }
+        .matrix-col:nth-child(10) { left: 95%; animation-duration: 12s; animation-delay: 1.8s; }
+        
+        @keyframes matrix-fall {
+          0% { transform: translateY(-100%); opacity: 1; }
+          100% { transform: translateY(500px); opacity: 0; }
+        }
+        
+        /* Glow line */
+        .glow-line {
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(90deg, transparent, #00ffaa, #00ccff, transparent);
+          animation: glow-sweep 4s ease-in-out infinite;
+        }
+        .glow-line-bottom {
+          top: auto;
+          bottom: 0;
+          animation-delay: 2s;
+        }
+        
+        @keyframes glow-sweep {
+          0% { left: -100%; }
+          100% { left: 100%; }
+        }
+        
+        /* Corner accents */
+        .corner {
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          border-color: #00ffaa;
+          border-style: solid;
+          border-width: 0;
+          animation: corner-pulse 2s ease-in-out infinite alternate;
+        }
+        .corner-tl { top: 15px; left: 15px; border-top-width: 2px; border-left-width: 2px; }
+        .corner-tr { top: 15px; right: 15px; border-top-width: 2px; border-right-width: 2px; }
+        .corner-bl { bottom: 15px; left: 15px; border-bottom-width: 2px; border-left-width: 2px; }
+        .corner-br { bottom: 15px; right: 15px; border-bottom-width: 2px; border-right-width: 2px; }
+        
+        @keyframes corner-pulse {
+          0% { opacity: 0.4; border-color: #00ffaa; }
+          100% { opacity: 1; border-color: #00ccff; }
+        }
+        
+        .title {
+          font-size: 36px;
+          font-weight: 700;
+          background: linear-gradient(135deg, #00ffaa, #00ccff, #00ffaa);
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: gradient-shift 3s ease infinite;
+          z-index: 10;
+          text-align: center;
+          margin: 0;
+        }
+        
+        @keyframes gradient-shift {
+          0% { background-position: 0% center; }
+          50% { background-position: 100% center; }
+          100% { background-position: 0% center; }
+        }
+        
+        .subtitle {
+          font-size: 16px;
+          color: #00ffaa;
+          margin-top: 12px;
+          z-index: 10;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          animation: flicker 3s ease-in-out infinite;
+        }
+        
+        @keyframes flicker {
+          0%, 100% { opacity: 1; text-shadow: 0 0 10px #00ffaa40; }
+          50% { opacity: 0.8; text-shadow: 0 0 20px #00ffaa80, 0 0 40px #00ffaa40; }
+        }
+        
+        .tagline {
+          font-size: 13px;
+          color: #58a6ff;
+          margin-top: 10px;
+          z-index: 10;
+          opacity: 0.8;
+        }
+        
+        .terminal-prompt {
+          font-size: 12px;
+          color: #8b949e;
+          margin-top: 20px;
+          z-index: 10;
+        }
+        .terminal-prompt span {
+          color: #00ffaa;
+        }
+        .cursor {
+          display: inline-block;
+          width: 8px;
+          height: 15px;
+          background: #00ffaa;
+          animation: blink 1s step-end infinite;
+          vertical-align: middle;
+          margin-left: 2px;
+        }
+        @keyframes blink {
+          50% { opacity: 0; }
+        }
+      </style>
+      
+      <div class="container">
+        <!-- Matrix rain columns -->
+        <div class="matrix-col">01001 10110 01101 11001 00101 10011</div>
+        <div class="matrix-col">11010 01001 10100 00110 11011 01110</div>
+        <div class="matrix-col">00111 10010 01011 11100 00011 10101</div>
+        <div class="matrix-col">10100 01110 10001 01011 11000 00110</div>
+        <div class="matrix-col">01101 11001 00100 10111 01010 11100</div>
+        <div class="matrix-col">11000 00101 11010 01001 10110 01011</div>
+        <div class="matrix-col">00110 10011 01100 11101 00010 10100</div>
+        <div class="matrix-col">10011 01100 10111 00001 11110 01000</div>
+        <div class="matrix-col">01010 11101 00011 10110 01001 11010</div>
+        <div class="matrix-col">11111 00000 10101 01010 11001 00110</div>
+        
+        <!-- Glow lines -->
+        <div class="glow-line"></div>
+        <div class="glow-line glow-line-bottom"></div>
+        
+        <!-- Corner accents -->
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+        
+        <p class="title">VIGNESHWAR REDDY GANGIDI</p>
+        <p class="subtitle">Full Stack Developer · AI Engineer</p>
+        <p class="tagline">Building the future with code, one commit at a time</p>
+        <p class="terminal-prompt">
+          <span>❯</span> vigneshwar@dev:~$ ./deploy --production<span class="cursor"></span>
+        </p>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
