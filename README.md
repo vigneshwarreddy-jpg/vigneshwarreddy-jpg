@@ -1,13 +1,20 @@
+<!-- Animated Matrix Capsule Top Header -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vigneshwarreddy-jpg/vigneshwarreddy-jpg/main/header.svg" width="100%" alt="Vigneshwar Reddy Gangidi — Full Stack Developer & AI Engineer" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:050811,50:0a1128,100:050811&height=180&section=header&text=VIGNESHWAR%20REDDY%20GANGIDI&fontSize=38&fontColor=00ffaa&animation=twinkling&stroke=00ffaa&strokeWidth=2" width="100%" alt="Header Banner" />
+</p>
+
+<!-- Avatar & Typing Animation -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vigneshwarreddy-jpg/vigneshwarreddy-jpg/main/avatar.jpg" width="140" height="140" style="border-radius: 50%; border: 3px solid #00ffaa; box-shadow: 0 0 20px #00ffaa;" alt="Cyberpunk Avatar" />
 </p>
 
 <p align="center">
   <a href="https://github.com/vigneshwarreddy-jpg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=00FFAA&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=650&height=70&lines=%F0%9F%9A%80+Full+Stack+Developer+%7C+AI+%26+ML+Engineer;%F0%9F%94%A5+Python+%E2%80%A2+React+%E2%80%A2+Flask+%E2%80%A2+NLP+%E2%80%A2+Deep+Learning;%F0%9F%92%BB+Building+Intelligent+Web+Applications" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=3000&pause=1000&color=00FFAA&center=true&vCenter=true&multiline=true&repeat=true&width=650&height=70&lines=%E2%9A%A1+Full+Stack+Developer+%7C+AI+%26+ML+Engineer;%F0%9F%94%A5+Python+%E2%80%A2+React+%E2%80%A2+Flask+%E2%80%A2+NLP+%E2%80%A2+Deep+Learning;%F0%9F%92%BB+Building+Intelligent+Matrix-Grade+Web+Apps" alt="Typing SVG" />
   </a>
 </p>
 
+<!-- Social & Status Badges -->
 <p align="center">
   <a href="mailto:vigneshwarreddy402@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
@@ -23,15 +30,9 @@
 
 ---
 
-## ⚡ Matrix Code Rain Background
+## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30"> About Me
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=matrix&color=0:000000,100:00ffaa&height=120&section=header&text=MATRIX%20TERMINAL%20ONLINE&fontSize=24&fontColor=00ffaa&animation=fadeIn" width="100%" alt="Matrix Banner" />
-</p>
-
----
-
-## 👨‍💻 About Me
+<img align="right" alt="Cyber Coding Setup" width="350" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"/>
 
 ```js
 const vigneshwar = {
@@ -44,16 +45,22 @@ const vigneshwar = {
 };
 ```
 
-<img align="right" alt="Coding GIF" width="340" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"/>
-
-- 🔭 I'm currently working on **AI-powered web applications**
-- 🌱 I'm advancing my knowledge in **Deep Learning, NLP & Cloud Architecture**
-- 👯 Open to collaborate on **Full-Stack Web & Open-Source AI/ML Projects**
-- 💬 Ask me about **Python, React, Angular, Flask, NLP, SQL & MongoDB**
-- 📫 Contact: **vigneshwarreddy402@gmail.com** | **+91 6305128441**
-- 📍 Location: **Hyderabad, India** — Open to relocate
+- 🔭 **Current Focus:** Building AI-powered Full-Stack web applications
+- 🌱 **Learning:** Advanced Deep Learning, NLP Architectures & Cloud Microservices
+- 👯 **Open for:** Full-Stack & AI/ML Software Engineering Roles
+- 💬 **Ask me about:** Python, React, Angular, Flask, NLP, SQL, MongoDB
+- 📫 **Contact:** `vigneshwarreddy402@gmail.com` | `+91 6305128441`
+- 📍 **Location:** Hyderabad, India (Open to Relocate)
 
 <br clear="both"/>
+
+---
+
+## ⚡ Native Animated Matrix Terminal
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vigneshwarreddy-jpg/vigneshwarreddy-jpg/main/header.svg" width="100%" alt="Native Animated Matrix SVG Header" />
+</p>
 
 ---
 
@@ -68,7 +75,7 @@ const vigneshwar = {
 </p>
 
 <details>
-<summary><b>📋 Detailed Tech Stack (Click to Expand)</b></summary>
+<summary><b>📋 Detailed Tech Stack Breakdown (Click to Expand)</b></summary>
 
 <br/>
 
@@ -101,7 +108,7 @@ const vigneshwar = {
       <p>
         • Developed an ML system using NLP, TF-IDF vectorization, and Passive Aggressive Classifier.<br/>
         • Implemented tokenization, stop-word removal, lemmatization, and model evaluation.<br/>
-        • Deployed via Flask web app with interactive UI for instant predictions.
+        • Deployed via Flask web app with interactive UI for instant predictions (93% Accuracy).
       </p>
     </td>
     <td width="50%" valign="top">
@@ -123,7 +130,7 @@ const vigneshwar = {
 
 ---
 
-## 📊 GitHub Analytics
+## 📊 Live GitHub Analytics & Streaks
 
 <p align="center">
   <a href="https://github.com/vigneshwarreddy-jpg">
@@ -140,7 +147,17 @@ const vigneshwar = {
 
 ---
 
-## 🐍 Contribution Snake
+## 🏆 GitHub Trophies
+
+<p align="center">
+  <a href="https://github.com/vigneshwarreddy-jpg">
+    <img src="https://github-profile-trophy.vercel.app/?username=vigneshwarreddy-jpg&theme=darkhub&no-frame=true&no-bg=true&margin-w=10&column=7" alt="Trophies" />
+  </a>
+</p>
+
+---
+
+## 🐍 Contribution Snake Animation
 
 <p align="center">
   <img alt="Snake animation" src="https://raw.githubusercontent.com/vigneshwarreddy-jpg/vigneshwarreddy-jpg/output/github-snake-dark.svg" />
@@ -148,8 +165,9 @@ const vigneshwar = {
 
 ---
 
+<!-- Animated Footer Wave -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&animation=twinkling" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" width="100%" alt="Footer Wave" />
 </p>
 
 <p align="center">
