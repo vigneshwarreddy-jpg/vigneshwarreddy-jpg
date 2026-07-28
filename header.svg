@@ -1,183 +1,130 @@
-<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
-        
-        .container {
-          width: 800px;
-          height: 400px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          background: linear-gradient(135deg, #0a0a0a 0%, #0d1117 30%, #0a1628 60%, #0d1117 100%);
-          position: relative;
-          overflow: hidden;
-          font-family: 'JetBrains Mono', monospace;
-        }
-        
-        /* Matrix rain effect */
-        .matrix-col {
-          position: absolute;
-          top: -100%;
-          font-size: 14px;
-          color: #00ff4120;
-          animation: matrix-fall linear infinite;
-          font-family: 'JetBrains Mono', monospace;
-        }
-        .matrix-col:nth-child(1) { left: 5%; animation-duration: 8s; animation-delay: 0s; }
-        .matrix-col:nth-child(2) { left: 15%; animation-duration: 10s; animation-delay: 1s; }
-        .matrix-col:nth-child(3) { left: 25%; animation-duration: 7s; animation-delay: 0.5s; }
-        .matrix-col:nth-child(4) { left: 35%; animation-duration: 9s; animation-delay: 2s; }
-        .matrix-col:nth-child(5) { left: 45%; animation-duration: 11s; animation-delay: 0.3s; }
-        .matrix-col:nth-child(6) { left: 55%; animation-duration: 8s; animation-delay: 1.5s; }
-        .matrix-col:nth-child(7) { left: 65%; animation-duration: 10s; animation-delay: 0.8s; }
-        .matrix-col:nth-child(8) { left: 75%; animation-duration: 7s; animation-delay: 2.5s; }
-        .matrix-col:nth-child(9) { left: 85%; animation-duration: 9s; animation-delay: 0.1s; }
-        .matrix-col:nth-child(10) { left: 95%; animation-duration: 12s; animation-delay: 1.8s; }
-        
-        @keyframes matrix-fall {
-          0% { transform: translateY(-100%); opacity: 1; }
-          100% { transform: translateY(500px); opacity: 0; }
-        }
-        
-        /* Glow line */
-        .glow-line {
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 2px;
-          background: linear-gradient(90deg, transparent, #00ffaa, #00ccff, transparent);
-          animation: glow-sweep 4s ease-in-out infinite;
-        }
-        .glow-line-bottom {
-          top: auto;
-          bottom: 0;
-          animation-delay: 2s;
-        }
-        
-        @keyframes glow-sweep {
-          0% { left: -100%; }
-          100% { left: 100%; }
-        }
-        
-        /* Corner accents */
-        .corner {
-          position: absolute;
-          width: 30px;
-          height: 30px;
-          border-color: #00ffaa;
-          border-style: solid;
-          border-width: 0;
-          animation: corner-pulse 2s ease-in-out infinite alternate;
-        }
-        .corner-tl { top: 15px; left: 15px; border-top-width: 2px; border-left-width: 2px; }
-        .corner-tr { top: 15px; right: 15px; border-top-width: 2px; border-right-width: 2px; }
-        .corner-bl { bottom: 15px; left: 15px; border-bottom-width: 2px; border-left-width: 2px; }
-        .corner-br { bottom: 15px; right: 15px; border-bottom-width: 2px; border-right-width: 2px; }
-        
-        @keyframes corner-pulse {
-          0% { opacity: 0.4; border-color: #00ffaa; }
-          100% { opacity: 1; border-color: #00ccff; }
-        }
-        
-        .title {
-          font-size: 36px;
-          font-weight: 700;
-          background: linear-gradient(135deg, #00ffaa, #00ccff, #00ffaa);
-          background-size: 200% auto;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          animation: gradient-shift 3s ease infinite;
-          z-index: 10;
-          text-align: center;
-          margin: 0;
-        }
-        
-        @keyframes gradient-shift {
-          0% { background-position: 0% center; }
-          50% { background-position: 100% center; }
-          100% { background-position: 0% center; }
-        }
-        
-        .subtitle {
-          font-size: 16px;
-          color: #00ffaa;
-          margin-top: 12px;
-          z-index: 10;
-          letter-spacing: 3px;
-          text-transform: uppercase;
-          animation: flicker 3s ease-in-out infinite;
-        }
-        
-        @keyframes flicker {
-          0%, 100% { opacity: 1; text-shadow: 0 0 10px #00ffaa40; }
-          50% { opacity: 0.8; text-shadow: 0 0 20px #00ffaa80, 0 0 40px #00ffaa40; }
-        }
-        
-        .tagline {
-          font-size: 13px;
-          color: #58a6ff;
-          margin-top: 10px;
-          z-index: 10;
-          opacity: 0.8;
-        }
-        
-        .terminal-prompt {
-          font-size: 12px;
-          color: #8b949e;
-          margin-top: 20px;
-          z-index: 10;
-        }
-        .terminal-prompt span {
-          color: #00ffaa;
-        }
-        .cursor {
-          display: inline-block;
-          width: 8px;
-          height: 15px;
-          background: #00ffaa;
-          animation: blink 1s step-end infinite;
-          vertical-align: middle;
-          margin-left: 2px;
-        }
-        @keyframes blink {
-          50% { opacity: 0; }
-        }
-      </style>
-      
-      <div class="container">
-        <!-- Matrix rain columns -->
-        <div class="matrix-col">01001 10110 01101 11001 00101 10011</div>
-        <div class="matrix-col">11010 01001 10100 00110 11011 01110</div>
-        <div class="matrix-col">00111 10010 01011 11100 00011 10101</div>
-        <div class="matrix-col">10100 01110 10001 01011 11000 00110</div>
-        <div class="matrix-col">01101 11001 00100 10111 01010 11100</div>
-        <div class="matrix-col">11000 00101 11010 01001 10110 01011</div>
-        <div class="matrix-col">00110 10011 01100 11101 00010 10100</div>
-        <div class="matrix-col">10011 01100 10111 00001 11110 01000</div>
-        <div class="matrix-col">01010 11101 00011 10110 01001 11010</div>
-        <div class="matrix-col">11111 00000 10101 01010 11001 00110</div>
-        
-        <!-- Glow lines -->
-        <div class="glow-line"></div>
-        <div class="glow-line glow-line-bottom"></div>
-        
-        <!-- Corner accents -->
-        <div class="corner corner-tl"></div>
-        <div class="corner corner-tr"></div>
-        <div class="corner corner-bl"></div>
-        <div class="corner corner-br"></div>
-        
-        <p class="title">VIGNESHWAR REDDY GANGIDI</p>
-        <p class="subtitle">Full Stack Developer · AI Engineer</p>
-        <p class="tagline">Building the future with code, one commit at a time</p>
-        <p class="terminal-prompt">
-          <span>❯</span> vigneshwar@dev:~$ ./deploy --production<span class="cursor"></span>
-        </p>
-      </div>
-    </div>
-  </foreignObject>
+<svg width="800" height="320" viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="50%" stop-color="#0a1128" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Animated Title Gradient -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ffaa">
+        <animate attributeName="stop-color" values="#00ffaa; #00ccff; #00ffaa" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#00ccff">
+        <animate attributeName="stop-color" values="#00ccff; #00ffaa; #00ccff" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#00ffaa">
+        <animate attributeName="stop-color" values="#00ffaa; #00ccff; #00ffaa" dur="4s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Glowing Text Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Subdued Matrix Glow -->
+    <filter id="matrix-glow">
+      <feGaussianBlur stdDeviation="1" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'Courier New', Courier, monospace, sans-serif; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    
+    /* Matrix Columns Animation */
+    .m-col { font-size: 12px; fill: #00ffaa; opacity: 0.25; font-family: monospace; }
+    
+    @keyframes fall1 { 0% { transform: translateY(-200px); opacity: 0; } 50% { opacity: 0.35; } 100% { transform: translateY(350px); opacity: 0; } }
+    @keyframes fall2 { 0% { transform: translateY(-150px); opacity: 0; } 50% { opacity: 0.3; } 100% { transform: translateY(350px); opacity: 0; } }
+    @keyframes fall3 { 0% { transform: translateY(-250px); opacity: 0; } 50% { opacity: 0.4; } 100% { transform: translateY(350px); opacity: 0; } }
+    
+    .c1 { animation: fall1 6s infinite linear; }
+    .c2 { animation: fall2 8s infinite linear 1s; }
+    .c3 { animation: fall3 5s infinite linear 2s; }
+    .c4 { animation: fall1 7s infinite linear 3s; }
+    .c5 { animation: fall2 9s infinite linear 0.5s; }
+    .c6 { animation: fall3 6s infinite linear 2.5s; }
+
+    /* Border Glow Pulse */
+    @keyframes border-pulse {
+      0%, 100% { stroke: #00ffaa; opacity: 0.6; }
+      50% { stroke: #00ccff; opacity: 1; }
+    }
+    .corner-line { stroke-width: 2; animation: border-pulse 3s infinite ease-in-out; }
+    
+    /* Scanline */
+    @keyframes scan {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(320px); }
+    }
+    .scanline {
+      animation: scan 8s linear infinite;
+      opacity: 0.15;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="320" rx="12" fill="url(#bg-grad)" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Matrix Code Streams (Pure SVG Text) -->
+  <g class="mono m-col">
+    <text x="30" y="0" class="c1">01101<tspan x="30" dy="18">10010</tspan><tspan x="30" dy="18">00110</tspan><tspan x="30" dy="18">11101</tspan><tspan x="30" dy="18">01011</tspan></text>
+    <text x="110" y="0" class="c2">10100<tspan x="110" dy="18">01110</tspan><tspan x="110" dy="18">11001</tspan><tspan x="110" dy="18">00101</tspan><tspan x="110" dy="18">10111</tspan></text>
+    <text x="210" y="0" class="c3">00111<tspan x="210" dy="18">11010</tspan><tspan x="210" dy="18">01001</tspan><tspan x="210" dy="18">10110</tspan><tspan x="210" dy="18">00011</tspan></text>
+    <text x="310" y="0" class="c1">11000<tspan x="310" dy="18">01011</tspan><tspan x="310" dy="18">10101</tspan><tspan x="310" dy="18">00110</tspan><tspan x="310" dy="18">11100</tspan></text>
+    <text x="420" y="0" class="c4">01010<tspan x="420" dy="18">11100</tspan><tspan x="420" dy="18">00011</tspan><tspan x="420" dy="18">10110</tspan><tspan x="420" dy="18">01101</tspan></text>
+    <text x="520" y="0" class="c2">10011<tspan x="520" dy="18">01100</tspan><tspan x="520" dy="18">11010</tspan><tspan x="520" dy="18">00101</tspan><tspan x="520" dy="18">10111</tspan></text>
+    <text x="620" y="0" class="c5">01100<tspan x="620" dy="18">10101</tspan><tspan x="620" dy="18">00011</tspan><tspan x="620" dy="18">11110</tspan><tspan x="620" dy="18">01001</tspan></text>
+    <text x="720" y="0" class="c6">11010<tspan x="720" dy="18">00110</tspan><tspan x="720" dy="18">10100</tspan><tspan x="720" dy="18">01101</tspan><tspan x="720" dy="18">11001</tspan></text>
+  </g>
+
+  <!-- Glowing Corner Borders -->
+  <path d="M 20,40 L 20,20 L 40,20" fill="none" class="corner-line" />
+  <path d="M 760,20 L 780,20 L 780,40" fill="none" class="corner-line" />
+  <path d="M 20,280 L 20,300 L 40,300" fill="none" class="corner-line" />
+  <path d="M 760,300 L 780,300 L 780,280" fill="none" class="corner-line" />
+
+  <!-- Horizontal Glow Sweep -->
+  <line x1="20" y1="20" x2="780" y2="20" stroke="#00ffaa" stroke-width="1" opacity="0.3" />
+  <line x1="20" y1="300" x2="780" y2="300" stroke="#00ffaa" stroke-width="1" opacity="0.3" />
+
+  <!-- Main Title -->
+  <text x="400" y="125" text-anchor="middle" class="sans" font-size="34" font-weight="800" fill="url(#title-grad)" filter="url(#glow)" letter-spacing="1">
+    VIGNESHWAR REDDY GANGIDI
+  </text>
+
+  <!-- Subtitle -->
+  <text x="400" y="165" text-anchor="middle" class="mono" font-size="16" font-weight="700" fill="#00ffaa" letter-spacing="3">
+    FULL STACK DEVELOPER · AI &amp; ML ENGINEER
+  </text>
+
+  <!-- Tagline -->
+  <text x="400" y="198" text-anchor="middle" class="sans" font-size="14" fill="#94a3b8" letter-spacing="1">
+    Building Scalable Web Apps &amp; Intelligent AI Solutions
+  </text>
+
+  <!-- Terminal Command Prompt Box -->
+  <rect x="200" y="225" width="400" height="36" rx="6" fill="#0d1527" stroke="#1e293b" stroke-width="1" />
+  <text x="215" y="248" class="mono" font-size="13" fill="#38bdf8">
+    vigneshwar<tspan fill="#00ffaa">@dev</tspan>:<tspan fill="#f43f5e">~</tspan>$ <tspan fill="#f1f5f9">./run_matrix.sh</tspan>
+  </text>
+  <!-- Blinking Cursor -->
+  <rect x="382" y="236" width="8" height="15" fill="#00ffaa">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Subtle Scanline effect -->
+  <line x1="0" y1="0" x2="800" y2="0" stroke="#00ffaa" stroke-width="2" class="scanline" />
 </svg>
