@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vigneshwar Reddy Gangidi | Full Stack Developer & AI Engineer</title>
+  <meta name="description" content="Portfolio of Vigneshwar Reddy Gangidi - B.Tech AI-ML Student, Full Stack Developer, Python & ML Specialist based in Hyderabad, India.">
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Matrix Digital Rain Canvas -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- Cyber Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-prefix">&gt;_</span> vigneshwar<span class="logo-dot">.dev</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+        <li><a href="#projects" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+        <li><a href="#terminal-section" class="nav-link"><i class="fa-solid fa-terminal"></i> Terminal</a></li>
+        <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="toggle-matrix-btn" class="cyber-btn sm" title="Toggle Matrix Rain Effect">
+          <i class="fa-solid fa-pause"></i> <span id="matrix-btn-text">Matrix</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <div class="status-badge">
+        <span class="pulse-dot"></span> Open for Full Stack &amp; AI/ML Roles
+      </div>
+      
+      <h1 class="hero-title">
+        Hi, I'm <span class="glow-text">Vigneshwar Reddy</span>
+      </h1>
+      
+      <div class="typing-container">
+        <span class="terminal-prompt">vigneshwar@dev:~$</span>
+        <span id="typed-text" class="typed-text"></span><span class="cursor">&nbsp;</span>
+      </div>
+
+      <p class="hero-description">
+        Final-Year <strong>B.Tech (AI &amp; ML)</strong> student passionate about crafting high-performance full-stack web applications, machine learning pipelines, and intelligent NLP systems.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="cyber-btn primary"><i class="fa-solid fa-rocket"></i> View Projects</a>
+        <a href="#contact" class="cyber-btn secondary"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+        <a href="https://github.com/vigneshwarreddy-jpg" target="_blank" class="cyber-btn icon-only" title="GitHub Profile">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vigneshwarreddy/" target="_blank" class="cyber-btn icon-only" title="LinkedIn Profile">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number">2+</span>
+          <span class="stat-label">Full Stack Projects</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">93%</span>
+          <span class="stat-label">ML Accuracy Achieved</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">7.0</span>
+          <span class="stat-label">B.Tech CGPA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Resume Section -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <h2 class="section-title"><span class="title-number">01.</span> About &amp; Experience</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card glass-panel">
+        <h3><i class="fa-solid fa-address-card"></i> Background</h3>
+        <p>
+          I am a B.Tech student specializing in <strong>Artificial Intelligence and Machine Learning</strong> at CMR Institute of Technology, Hyderabad. I specialize in building end-to-end web applications with Python, React, Flask, and MongoDB while integrating intelligent ML models for real-world automation.
+        </p>
+        <ul class="about-details-list">
+          <li><strong><i class="fa-solid fa-location-dot"></i> Location:</strong> Hyderabad, India (Open to Relocate)</li>
+          <li><strong><i class="fa-solid fa-envelope"></i> Email:</strong> vigneshwarreddy402@gmail.com</li>
+          <li><strong><i class="fa-solid fa-phone"></i> Phone:</strong> +91 6305128441</li>
+          <li><strong><i class="fa-solid fa-graduation-cap"></i> Degree:</strong> B.Tech in AI-ML (2022 - 2026)</li>
+        </ul>
+      </div>
+
+      <div class="timeline-container glass-panel">
+        <h3><i class="fa-solid fa-briefcase"></i> Experience &amp; Education</h3>
+        
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jun 2024 - Jul 2024</div>
+            <h4 class="timeline-title">Python Intern</h4>
+            <span class="timeline-org">E-code Learning Software, Hyderabad</span>
+            <p class="timeline-desc">
+              Applied machine learning algorithms to practical datasets. Contributed to data collection, preprocessing, feature extraction, and training workflows.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022 - 2026</div>
+            <h4 class="timeline-title">B.Tech in Artificial Intelligence &amp; Machine Learning</h4>
+            <span class="timeline-org">CMR Institute of Technology (GPA: 7.0/10)</span>
+            <p class="timeline-desc">
+              Focusing on Machine Learning, Deep Learning, Data Structures, Web Development, DBMS, and Natural Language Processing.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 - 2026</div>
+            <h4 class="timeline-title">Certifications</h4>
+            <span class="timeline-org">Google &amp; Innomatics Research Lab</span>
+            <p class="timeline-desc">
+              • Google AI-ML Virtual Internship (Sep 2024)<br>
+              • Full Stack Web Development Certification (Mar 2026)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Skills Section -->
+  <section id="skills" class="section">
+    <div class="section-header">
+      <h2 class="section-title"><span class="title-number">02.</span> Tech Arsenal</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-box glass-panel">
+        <div class="skill-category-header">
+          <i class="fa-solid fa-code icon-cyan"></i>
+          <h3>Languages</h3>
+        </div>
+        <div class="skill-pills">
+          <span class="pill"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="pill"><i class="fa-brands fa-java"></i> Java</span>
+          <span class="pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span class="pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+          <span class="pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+        </div>
+      </div>
+
+      <div class="skill-box glass-panel">
+        <div class="skill-category-header">
+          <i class="fa-solid fa-layer-group icon-green"></i>
+          <h3>Web Frameworks</h3>
+        </div>
+        <div class="skill-pills">
+          <span class="pill"><i class="fa-brands fa-react"></i> React.js</span>
+          <span class="pill"><i class="fa-brands fa-angular"></i> Angular</span>
+          <span class="pill"><i class="fa-solid fa-pepper-hot"></i> Flask</span>
+          <span class="pill"><i class="fa-brands fa-node-js"></i> Node.js</span>
+          <span class="pill"><i class="fa-solid fa-network-wired"></i> REST APIs</span>
+        </div>
+      </div>
+
+      <div class="skill-box glass-panel">
+        <div class="skill-category-header">
+          <i class="fa-solid fa-brain icon-purple"></i>
+          <h3>AI, ML &amp; NLP</h3>
+        </div>
+        <div class="skill-pills">
+          <span class="pill"><i class="fa-solid fa-diagram-project"></i> Machine Learning</span>
+          <span class="pill"><i class="fa-solid fa-language"></i> NLP &amp; TF-IDF</span>
+          <span class="pill"><i class="fa-solid fa-chart-pie"></i> Scikit-Learn</span>
+          <span class="pill"><i class="fa-solid fa-table"></i> Pandas &amp; NumPy</span>
+          <span class="pill"><i class="fa-solid fa-robot"></i> Deep Learning</span>
+        </div>
+      </div>
+
+      <div class="skill-box glass-panel">
+        <div class="skill-category-header">
+          <i class="fa-solid fa-database icon-gold"></i>
+          <h3>Databases &amp; Visualization</h3>
+        </div>
+        <div class="skill-pills">
+          <span class="pill"><i class="fa-solid fa-database"></i> SQL (MySQL)</span>
+          <span class="pill"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+          <span class="pill"><i class="fa-solid fa-chart-column"></i> Power BI</span>
+          <span class="pill"><i class="fa-solid fa-chart-line"></i> Tableau</span>
+          <span class="pill"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="section-header">
+      <h2 class="section-title"><span class="title-number">03.</span> Featured Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card glass-panel">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/vigneshwarreddy-jpg" target="_blank" title="View Source"><i class="fa-brands fa-github"></i></a>
+            <button class="cyber-btn sm demo-trigger-btn" onclick="openDemoModal('fake-news')"><i class="fa-solid fa-play"></i> Live Demo</button>
+          </div>
+        </div>
+        
+        <h3 class="project-title">Fake News Detection System</h3>
+        <p class="project-desc">
+          End-to-end Machine Learning web application that classifies news articles as Real or Fake using NLP preprocessing, TF-IDF vectorization, and Passive Aggressive Classifier integrated with a Flask backend.
+        </p>
+
+        <div class="project-highlights">
+          <span><i class="fa-solid fa-circle-check"></i> 93% Model Accuracy</span>
+          <span><i class="fa-solid fa-circle-check"></i> Real-time Flask API</span>
+        </div>
+
+        <div class="project-tech">
+          <span>Python</span>
+          <span>NLP</span>
+          <span>Scikit-Learn</span>
+          <span>Flask</span>
+          <span>TF-IDF</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card glass-panel">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-gopuram"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/vigneshwarreddy-jpg" target="_blank" title="View Source"><i class="fa-brands fa-github"></i></a>
+            <button class="cyber-btn sm demo-trigger-btn" onclick="openDemoModal('temples')"><i class="fa-solid fa-map-location-dot"></i> Live Map</button>
+          </div>
+        </div>
+        
+        <h3 class="project-title">Temple Locations Across India</h3>
+        <p class="project-desc">
+          Full-Stack web application displaying temples across India with geolocation details, interactive map navigation, search filters, and responsive UI built using React and Python backend services.
+        </p>
+
+        <div class="project-highlights">
+          <span><i class="fa-solid fa-circle-check"></i> Interactive Map UI</span>
+          <span><i class="fa-solid fa-circle-check"></i> REST API Backend</span>
+        </div>
+
+        <div class="project-tech">
+          <span>React</span>
+          <span>Python</span>
+          <span>REST APIs</span>
+          <span>Maps API</span>
+          <span>MongoDB</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Terminal Section -->
+  <section id="terminal-section" class="section">
+    <div class="section-header">
+      <h2 class="section-title"><span class="title-number">04.</span> Interactive Developer Terminal</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="terminal-window glass-panel">
+      <div class="terminal-topbar">
+        <div class="terminal-buttons">
+          <span class="t-btn close"></span>
+          <span class="t-btn minimize"></span>
+          <span class="t-btn maximize"></span>
+        </div>
+        <div class="terminal-title">vigneshwar@matrix-shell:~</div>
+      </div>
+      <div class="terminal-body" id="terminal-output">
+        <div class="t-line">Welcome to <span class="text-green">Vigneshwar's Interactive Cyber Terminal v2.5</span>.</div>
+        <div class="t-line">Type <span class="text-cyan">'help'</span> to see available commands or click a quick command below:</div>
+        
+        <div class="quick-cmd-buttons">
+          <button class="q-btn" onclick="executeCmd('help')">help</button>
+          <button class="q-btn" onclick="executeCmd('about')">about</button>
+          <button class="q-btn" onclick="executeCmd('skills')">skills</button>
+          <button class="q-btn" onclick="executeCmd('projects')">projects</button>
+          <button class="q-btn" onclick="executeCmd('contact')">contact</button>
+          <button class="q-btn" onclick="executeCmd('clear')">clear</button>
+        </div>
+      </div>
+      <div class="terminal-input-row">
+        <span class="terminal-prompt">vigneshwar@dev:~$</span>
+        <input type="text" id="terminal-input" placeholder="type command here..." autocomplete="off" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="section-header">
+      <h2 class="section-title"><span class="title-number">05.</span> Contact &amp; Connect</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info glass-panel">
+        <h3>Let's Build Something Great Together!</h3>
+        <p>
+          I am actively seeking Full Stack Developer and AI/ML Engineer opportunities. Feel free to drop a message, connect on LinkedIn, or reach out directly!
+        </p>
+
+        <div class="contact-links-list">
+          <a href="mailto:vigneshwarreddy402@gmail.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-val">vigneshwarreddy402@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="tel:+916305128441" class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <span class="contact-label">Phone</span>
+              <span class="contact-val">+91 6305128441</span>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/vigneshwarreddy/" target="_blank" class="contact-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-val">linkedin.com/in/vigneshwarreddy</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/vigneshwarreddy-jpg" target="_blank" class="contact-item">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-val">github.com/vigneshwarreddy-jpg</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <form id="contact-form" class="contact-form glass-panel" onsubmit="handleFormSubmit(event)">
+        <h3><i class="fa-solid fa-paper-plane"></i> Send Message</h3>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" required placeholder="John Doe">
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" required placeholder="john@example.com">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" required placeholder="Hi Vigneshwar, let's discuss an opportunity..."></textarea>
+        </div>
+        <button type="submit" class="cyber-btn primary block"><i class="fa-solid fa-paper-plane"></i> Transmit Message</button>
+        <div id="form-status" class="form-status"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Interactive Project Demo Modal -->
+  <div id="demo-modal" class="modal-backdrop" onclick="closeDemoModal(event)">
+    <div class="modal-content glass-panel" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h3 id="modal-title">Project Interactive Demo</h3>
+        <button class="modal-close-btn" onclick="closeDemoModal()">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Designed &amp; Built with <i class="fa-solid fa-heart text-green"></i> by <strong>Vigneshwar Reddy Gangidi</strong></p>
+    <p class="footer-sub">&copy; 2026 | Powered by Matrix Rain &amp; Cyber Aesthetics</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
