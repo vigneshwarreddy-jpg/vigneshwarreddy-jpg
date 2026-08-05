@@ -211,7 +211,7 @@ function executeCmd(cmd) {
         <div class="t-line">Email    : vigneshwarreddy402@gmail.com</div>
         <div class="t-line">Phone    : +91 6305128441</div>
         <div class="t-line">GitHub   : github.com/vigneshwarreddy-jpg</div>
-        <div class="t-line">LinkedIn : linkedin.com/in/vigneshwarreddy</div>
+        <div class="t-line">LinkedIn : linkedin.com/in/vigneshwareddy23</div>
       `;
       break;
 
