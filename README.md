@@ -3,6 +3,13 @@
 <!-- Animated Header Banner -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Vigneshwar%20Reddy%20Gangidi&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20AI%20%26%20ML%20Engineer&descAlignY=55&descAlign=50&descSize=16" width="100%" alt="Header"/>
 
+<br/>
+
+<!-- Profile Image -->
+<img src="https://raw.githubusercontent.com/vigneshwarreddy-jpg/vigneshwarreddy-jpg/main/profile.jpg" width="130" height="130" style="border-radius:50%" alt="Vigneshwar Reddy"/>
+
+<br/>
+
 <!-- Typing animation -->
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=800&color=00FFAA&center=true&vCenter=true&repeat=true&width=600&lines=B.Tech+Graduate+in+AI+%26+ML+%F0%9F%8E%93;Full+Stack+Developer+%F0%9F%9A%80;Python+%7C+Flask+%7C+React+%7C+NLP;Open+to+Work+%E2%80%94+Let%27s+Connect!+%F0%9F%A4%9D" alt="Typing SVG" />
 
