@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Header Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Vigneshwar%20Reddy%20Gangidi&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20AI%20%26%20ML%20Engineer&descAlignY=55&descAlign=50&descSize=16" width="100%" alt=/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Vigneshwar%20Reddy%20Gangidi&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20AI%20%26%20ML%20Engineer&descAlignY=55&descAlign=50&descSize=16" width="100%" alt="G.VIGNESHWAR REDDY/>
 
 <br/>
 
